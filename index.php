@@ -14,7 +14,6 @@ define('DB_PASSWORD', '');
 
 
 // loading files
-require_once 'activities/Helpers/Helper.php';
 require_once 'vendor/autoload.php';
 
 // call main class to start bot
