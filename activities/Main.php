@@ -2,8 +2,8 @@
 
 namespace activities;
 
-use activities\Acton\Start;
 use activities\Traits\SendMessage;
+use activities\Action\Start;
 
 class Main
 {
@@ -80,11 +80,7 @@ class Main
     protected function mainMenus()
     {
         if ($this->text == "/start")
-            $this->startAction();
+            $this->start();
     }
 
-
-    protected function admin()
-    {
-    }
 }
