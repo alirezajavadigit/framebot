@@ -1,5 +1,8 @@
 {
     "autoload": {
+        "files": [
+            "activities/Helpers/Helper.php"  
+        ],
         "psr-4": {
             "activities\\": "activities/",
             "database\\": "database/"
