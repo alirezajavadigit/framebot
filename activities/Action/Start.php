@@ -1,10 +1,10 @@
 <?php
 
-namespace activities\Acton;
+namespace activities\Action;
 
-trait Start{
-
-    protected function startAction(){
-        $this->sendMessage(["chat_id" => $this->userID, "Text" => "hello it's test"]);
+trait Start
+{
+    protected function start(){
+        $this->sendMessage(["chat_id" => $this->userID, "text" => "hi thank you for using my framework"]);
     }
 }
