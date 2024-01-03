@@ -2,8 +2,8 @@
 
 namespace activities;
 
-use activities\Traits\SendMessage;
-use activities\Action\Start;
+use activities\Traits\Action\Start;
+use activities\Traits\TelegramMethods\SendMessage;
 
 class Main
 {

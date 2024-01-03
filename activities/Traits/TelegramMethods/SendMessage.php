@@ -1,5 +1,5 @@
 <?php 
-namespace activities\Traits;
+namespace activities\Traits\TelegramMethods;
 trait SendMessage{
 
     protected function sendMessage($message)

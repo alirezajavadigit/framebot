@@ -1,6 +1,6 @@
 <?php
 
-namespace activities\Action;
+namespace activities\Traits\Action;
 
 trait Start
 {

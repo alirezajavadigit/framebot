@@ -1,6 +1,6 @@
 <?php
 
-namespace activities\Traits;
+namespace activities\Traits\TelegramMethods;
 
 trait SendVideo
 {
