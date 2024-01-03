@@ -16,15 +16,17 @@ class Database{
 
     function __construct()
     {
-        try
-        {
-            $this->connection = new PDO("mysql:host=" . $this->dbHost. ";dbname=" . $this->dbName, $this->dbUserName, $this->dbPassword, $this->options);
-            echo 'ok';
-        }
-        catch(PDOException $e){
-            echo $e->getMessage();
-            exit;
-        }
+        $this->connection = DBConnection::getDBConnectionInstance();
+        
+        // try
+        // {
+        //     $this->connection = new PDO("mysql:host=" . $this->dbHost. ";dbname=" . $this->dbName, $this->dbUserName, $this->dbPassword, $this->options);
+        //     echo 'ok';
+        // }
+        // catch(PDOException $e){
+        //     echo $e->getMessage();
+        //     exit;
+        // }
     }
 
 
