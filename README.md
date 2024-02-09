@@ -6,7 +6,14 @@ The newly released Telegram Framework is an object-oriented programming (OOP) fr
 ### Features
 
     1. you have most usable telegram methods (i will add more in new versions)
-    2. you have easy database connection and 4 crud method for make your queries easy
+    2. you have a ORM like Laravel Eloquent
+
+### How To Use
+
+    1. git clone https://github.com/alirezajavadigit/framebot.git
+    2. composer install
+    3. Ready to use
+
 
 
 
