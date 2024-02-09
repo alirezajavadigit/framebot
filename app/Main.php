@@ -38,9 +38,6 @@ class Main
         $this->userID = $this->update['message']['chat']['id'];
         $this->text = persianNumbersToEnglish($this->update['message']['text']);
         $this->messageID = $this->update['message']['message_id'];
-
-        $user = User::find(1);
-        $this->sendMessage(['chat_id' => $this->userID, 'text' => 'test' . $user->username]);
         if(isset($this->update['message']['from']['first_name'])){
             $this->first_name = $this->update['message']['from']['first_name'];
         }
@@ -84,8 +81,8 @@ class Main
     protected function mainMenus()
     {
         
-        $this->start();
-        // if ($this->text == "/start")
+        if ($this->text == "/start")
+            $this->start();
     }
 
 }
