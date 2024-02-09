@@ -1,5 +1,5 @@
 <?php
-use activities\Main;
+use App\Main;
 
 
 //config

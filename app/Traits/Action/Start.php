@@ -1,10 +1,11 @@
 <?php
 
-namespace activities\Traits\Action;
+namespace App\Traits\Action;
 
 trait Start
 {
-    protected function start(){
+    protected function start()
+    {
         $this->sendMessage(["chat_id" => $this->userID, "text" => "hi thank you for using my framework"]);
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace activities\Traits\TelegramMethods;
+namespace App\Traits\TelegramMethods;
 
 trait SendPhoto
 {

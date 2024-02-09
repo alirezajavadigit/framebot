@@ -1,10 +1,10 @@
 <?php
 
-namespace activities\Traits\TelegramMethods;
+namespace App\Traits\TelegramMethods;
 
 trait BanChatMember
 {
-     /*
+    /*
     Use this method to delete a message, including service messages, with the following limitations:
     - A message can only be deleted if it was sent less than 48 hours ago.
     - Service messages about a supergroup, channel, or forum topic creation can't be deleted.
