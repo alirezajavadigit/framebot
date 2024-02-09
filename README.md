@@ -1,5 +1,4 @@
 
-[![Github All Releases](https://img.shields.io/github/downloads/alirezajavadigit/framebot/total.svg)]()
 
 # framebot
 The newly released Telegram Framework is an object-oriented programming (OOP) framework that provides developers with an easy and efficient way to build and deploy Telegram bots. Learn more about this framework and its features.
