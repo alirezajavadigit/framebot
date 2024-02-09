@@ -1,9 +1,10 @@
 <?php
 
-namespace activities;
+namespace App;
 
-use activities\Traits\Action\Start;
-use activities\Traits\TelegramMethods\SendMessage;
+use App\Model\User;
+use App\Traits\Action\Start;
+use App\Traits\TelegramMethods\SendMessage;
 
 class Main
 {
@@ -37,6 +38,9 @@ class Main
         $this->userID = $this->update['message']['chat']['id'];
         $this->text = persianNumbersToEnglish($this->update['message']['text']);
         $this->messageID = $this->update['message']['message_id'];
+
+        $user = User::find(1);
+        $this->sendMessage(['chat_id' => $this->userID, 'text' => 'test' . $user->username]);
         if(isset($this->update['message']['from']['first_name'])){
             $this->first_name = $this->update['message']['from']['first_name'];
         }
@@ -79,8 +83,9 @@ class Main
     //project main functions
     protected function mainMenus()
     {
-        if ($this->text == "/start")
-            $this->start();
+        
+        $this->start();
+        // if ($this->text == "/start")
     }
 
 }

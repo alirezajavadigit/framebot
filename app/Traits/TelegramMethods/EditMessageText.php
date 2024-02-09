@@ -1,8 +1,8 @@
 <?php
 
-namespace activities\Traits\TelegramMethods;
+namespace App\Traits\TelegramMethods;
 
-trait EditeMessageText
+trait EditMessageText
 {
     protected function editMessageText($message)
     {

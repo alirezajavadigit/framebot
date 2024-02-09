@@ -1,6 +1,9 @@
-<?php 
-namespace activities\Traits\TelegramMethods;
-trait SendMessage{
+<?php
+
+namespace App\Traits\TelegramMethods;
+
+trait SendMessage
+{
 
     protected function sendMessage($message)
     {
@@ -10,5 +13,4 @@ trait SendMessage{
         $result = messageRequestJson("sendMessage", $message);
         return $result;
     }
-    
 }
