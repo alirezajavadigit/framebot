@@ -4,12 +4,18 @@ namespace App\Traits\TelegramMethods;
 
 trait SendAudio
 {
-    /*
-    Use this method to send audio files, if you want Telegram clients to display them in the music player. Your audio must be in the .MP3 or .M4A format. On success, the sent Message is returned. Bots can currently send audio files of up to 50 MB in size, this limit may be changed in the future.
-    */
+    /**
+     * Send audio files.
+     *
+     * @param array $value An array containing parameters for the sendAudio method.
+     * @return array|null Returns the result of the sendAudio method.
+     */
     protected function sendAudio($value)
     {
+        // Call the messageRequestJson function to invoke the sendAudio method with the provided parameters.
         $result = messageRequestJson("sendAudio", $value);
+
+        // Return the result obtained from the sendAudio method.
         return $result;
     }
 }

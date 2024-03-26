@@ -4,13 +4,18 @@ namespace App\Traits\TelegramMethods;
 
 trait SendMessage
 {
-
+    /**
+     * Send a message.
+     *
+     * @param array $message An array containing parameters for sending a message.
+     * @return array|null Returns the result of the sendMessage method.
+     */
     protected function sendMessage($message)
     {
-        /* 
-        Use this method to send text messages. On success, the sent Message is returned.
-        */
+        // Call the messageRequestJson function to invoke the sendMessage method with the provided parameters.
         $result = messageRequestJson("sendMessage", $message);
+        
+        // Return the result obtained from the sendMessage method.
         return $result;
     }
 }
