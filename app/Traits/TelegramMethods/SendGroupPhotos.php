@@ -4,12 +4,18 @@ namespace App\Traits\TelegramMethods;
 
 trait SendGroupPhotos
 {
+    /**
+     * Send a group of photos.
+     *
+     * @param array $value An array containing parameters for sending a group of photos.
+     * @return array|null Returns the result of the sendMediaGroup method.
+     */
     protected function sendGroupPhotos($value)
     {
-        /*
-        Use this method to send a group of photos, videos, documents or audios as an album. Documents and audio files can be only grouped in an album with messages of the same type. On success, an array of Messages that were sent is returned.
-        */
+        // Call the messageRequestJson function to invoke the sendMediaGroup method with the provided parameters.
         $result = messageRequestJson("sendMediaGroup", $value);
+        
+        // Return the result obtained from the sendMediaGroup method.
         return $result;
     }
 }
