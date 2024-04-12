@@ -11,6 +11,10 @@ FrameBot is a fast and secure framework that offers an ORM similar to Eloquent, 
 - **Fast and Secure**: Optimized for performance without compromising security, providing a reliable foundation for your applications.
 - **Open to All**: This is a personal project created by Alireza Javadi, and everyone is free to use it.
 
+## Contributing
+
+Contributions are warmly welcomed and greatly appreciated. There are no specific rules for contributing, but please ensure your changes are well-documented and tested:
+
 ## Installation
 
 To get started with FrameBot, you can clone the repository and set up the necessary environment:
@@ -18,6 +22,3 @@ To get started with FrameBot, you can clone the repository and set up the necess
 ```bash
 git clone https://github.com/alirezajavadigit/framebot.git
 cd framebot
-
-## Contributing
-Contributions are warmly welcomed and greatly appreciated. There are no specific rules for contributing, but please ensure your changes are well-documented and tested:
