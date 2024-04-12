@@ -162,9 +162,9 @@ class Main
 
         // Extract sender details if available.
         if (isset($this->update['message']['from'])) {
-            $this->first_name = $this->update['message']['from']['first_name']; // Retrieves the sender's first name.
-            $this->last_name = $this->update['message']['from']['last_name']; // Retrieves the sender's last name.
-            $this->username = $this->update['message']['from']['username']; // Retrieves the sender's username.
+            $this->first_name = isset($this->update['message']['from']['first_name']) ? $this->update['message']['from']['first_name'] : '';  // Retrieves the sender's first name.
+            $this->last_name = isset($this->update['message']['from']['last_name']) ? $this->update['message']['from']['last_name'] : '';  // Retrieves the sender's first name.
+            $this->username = isset($this->update['message']['from']['username']) ? $this->update['message']['from']['username'] : '';  // Retrieves the sender's first name.
         }
 
         // Extract file IDs if present in the message.
