@@ -1,13 +1,20 @@
+# FrameBot
 
-[![Github All Releases](https://img.shields.io/github/downloads/alirezajavadigit/framebot/total.svg)]()
+FrameBot is a fast and secure framework that offers an ORM similar to Eloquent, making it incredibly user-friendly and powerful for developers looking to handle database operations efficiently. Designed with OOP principles in mind, FrameBot provides a robust foundation for building scalable applications.
 
-# framebot
-The newly released Telegram Framework is an object-oriented programming (OOP) framework that provides developers with an easy and efficient way to build and deploy Telegram bots. Learn more about this framework and its features.
+## Features
 
-### Features
+- **ORM Similar to Eloquent**: Allows easy and efficient interaction with databases using an object-relational mapping system.
+- **Environment Configuration**: Utilizes .env files for environment-specific settings, making it secure and versatile for different deployment scenarios.
+- **Object-Oriented Programming (OOP)**: Built with OOP principles to ensure clean, modular, and reusable code.
+- **Ease of Use**: Designed to be straightforward and intuitive, allowing developers to get projects up and running quickly.
+- **Fast and Secure**: Optimized for performance without compromising security, providing a reliable foundation for your applications.
+- **Open to All**: This is a personal project created by Alireza Javadi, and everyone is free to use it.
 
-    1. you have most usable telegram methods (i will add more in new versions)
-    2. you have easy database connection and 4 crud method for make your queries easy
+## Installation
 
+To get started with FrameBot, you can clone the repository and set up the necessary environment:
 
-it's my first release please support me i will work on it to make better
+```bash
+git clone https://github.com/alirezajavadigit/framebot.git
+cd framebot
