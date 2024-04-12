@@ -18,3 +18,6 @@ To get started with FrameBot, you can clone the repository and set up the necess
 ```bash
 git clone https://github.com/alirezajavadigit/framebot.git
 cd framebot
+
+## Contributing
+Contributions are warmly welcomed and greatly appreciated. There are no specific rules for contributing, but please ensure your changes are well-documented and tested:
