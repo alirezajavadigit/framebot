@@ -78,3 +78,30 @@ function env($name)
 {
     return $_ENV[$name];
 }
+
+/**
+ * Converts Persian and Arabic numerals in a string to English numerals.
+ *
+ * This function replaces Persian and Arabic numerals in the input string
+ * with their corresponding English numerals (0-9).
+ *
+ * @param string $string The string containing Persian or Arabic numerals
+ * @return string The string with Persian and Arabic numerals converted to English
+ */
+function persianNumbersToEnglish($string)
+{
+    // Arrays of Persian and Arabic numerals
+    $persian = ['۰', '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹'];
+    $arabic = ['٠', '١', '٢', '٣', '٤', '٥', '٦', '٧', '٨', '٩'];
+
+    // English numerals (0-9)
+    $num = range(0, 9);
+
+    // Replace Persian numerals with English numerals
+    $convertedPersianNums = str_replace($persian, $num, $string);
+
+    // Replace Arabic numerals with English numerals
+    $englishNumbersOnly = str_replace($arabic, $num, $convertedPersianNums);
+
+    return $englishNumbersOnly;
+}
