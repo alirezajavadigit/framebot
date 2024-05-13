@@ -7,8 +7,6 @@
 | PHP framework for Telegram bot development. Fast, flexible, feature-rich.
 |--------------------------------------------------------------------------
 | @category  Framework
-| @framework Framebot
-| @version   2.3.0
 | @author    Alireza Javadi
 | @license   MIT License
 | @link      https://github.com/alirezajavadigit/framebot
