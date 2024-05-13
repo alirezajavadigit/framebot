@@ -63,7 +63,7 @@ class ForwardMessage
      * This method sets the end flag to true, indicating that the message has been forwarded,
      * and then forward the message using the request method with the set parameters.
      *
-     * @return mixed The result of sending the message.
+     * @return mixed The result of sending the message.Create ForwardMessages class
      */
     private function setEnd()
     {
