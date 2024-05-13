@@ -11,10 +11,10 @@
 | @license   MIT License
 | @link      https://github.com/alirezajavadigit/framebot
 |--------------------------------------------------------------------------
-| System\TeleCore\Class\Message
+| System\TeleCore\Class\ForwardMessage
 |--------------------------------------------------------------------------
 | This class represents a message in the Telegram bot system and provides methods
-| for setting various parameters of the message. It automatically sends the
+| for setting various parameters of the message. It automatically forward the
 | message upon destruction of the object.
 |--------------------------------------------------------------------------
 */
@@ -35,9 +35,9 @@ class ForwardMessage
     private $params; // Array to store message parameters.
 
     /**
-     * @var bool $ended Flag to indicate if the message has been sent.
+     * @var bool $ended Flag to indicate if the message has been forwarded.
      */
-    private $ended = false; // Flag to indicate if the message has been sent.
+    private $ended = false; // Flag to indicate if the message has been forwarded.
 
     /**
      * Forward the message with the set parameters.
@@ -50,7 +50,7 @@ class ForwardMessage
      */
     public function __destruct()
     {
-        // Check if the message hasn't already been sent to avoid duplicate sending.
+        // Check if the message hasn't already been forwarded to avoid duplicate sending.
         if (!$this->ended) {
             // Send the message using the request method with the set parameters.
             $this->request("forwardMessage", $this->params);
@@ -58,10 +58,10 @@ class ForwardMessage
     }
 
     /**
-     * Set the end flag and send the message.
+     * Set the end flag and forward the message.
      *
-     * This method sets the end flag to true, indicating that the message has been sent,
-     * and then sends the message using the request method with the set parameters.
+     * This method sets the end flag to true, indicating that the message has been forwarded,
+     * and then forward the message using the request method with the set parameters.
      *
      * @return mixed The result of sending the message.
      */
