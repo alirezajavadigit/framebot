@@ -159,4 +159,16 @@ trait Setters
         $this->params['message_id'] = $message_id;
         return $this;
     }
+
+    /**
+     * Set an array of message IDs.
+     *
+     * @param array $message_ids An array of message IDs.
+     * @return Message Returns the current instance with the message IDs set.
+     */
+    private function setMessageIds(array $message_ids)
+    {
+        $this->params['message_ids'] = $message_ids;
+        return $this;
+    }
 }
