@@ -1,14 +1,33 @@
 <?php
 
+/*
+|--------------------------------------------------------------------------
+| Framebot
+|--------------------------------------------------------------------------
+| PHP framework for Telegram bot development. Fast, flexible, feature-rich.
+|--------------------------------------------------------------------------
+| @category  Framework
+| @framework Framebot
+| @version   2.3.0
+| @author    Alireza Javadi
+| @license   MIT License
+| @link      https://github.com/alirezajavadigit/framebot
+|--------------------------------------------------------------------------
+| Main
+|--------------------------------------------------------------------------
+| The Main class serves as the core component of the Framebot framework,
+| responsible for handling incoming messages and triggering appropriate actions.
+|--------------------------------------------------------------------------
+*/
+
 namespace App; // Defines the namespace for the Main class.
 
 use App\Model\User; // Import the User model from the App namespace.
 use App\Traits\Action\Start; // Import the Start trait from the App\Traits\Action namespace.
-use App\Traits\TelegramMethods\SendMessage; // Import the SendMessage trait from the App\Traits\TelegramMethods namespace.
 
 class Main
 {
-    use SendMessage, Start; // Use the SendMessage and Start traits.
+    use Start; // Use the SendMessage and Start traits.
 
     // Declare protected properties to store various message details.
 
@@ -41,11 +60,11 @@ class Main
     protected $text;
 
     /**
-     * Stores the ID of the user who sent the message.
+     * Stores the ID of the chat who sent the message.
      *
      * @var int
      */
-    protected $userID;
+    protected $chatID;
 
     /**
      * Stores the first name of the user who sent the message.
@@ -156,7 +175,7 @@ class Main
         $this->update = json_decode($content, true); // Decodes the JSON content and stores it in $this->update.
 
         // Extract relevant information from the update.
-        $this->userID = $this->update['message']['chat']['id']; // Retrieves the user ID from the update.
+        $this->chatID = $this->update['message']['chat']['id']; // Retrieves the chat ID from the update.
         $this->text = persianNumbersToEnglish($this->update['message']['text']); // Converts Persian numbers to English and stores the text content.
         $this->messageID = $this->update['message']['message_id']; // Retrieves the message ID from the update.
 
