@@ -7,8 +7,6 @@
 | PHP framework for Telegram bot development. Fast, flexible, feature-rich.
 |--------------------------------------------------------------------------
 | @category  Framework
-| @framework Framebot
-| @version   2.3.0
 | @author    Alireza Javadi
 | @license   MIT License
 | @link      https://github.com/alirezajavadigit/framebot
@@ -23,7 +21,7 @@
 namespace App; // Defines the namespace for the Main class.
 
 use App\Model\User; // Import the User model from the App namespace.
-use App\Traits\Action\Start; // Import the Start trait from the App\Traits\Action namespace.
+use App\Action\Start; // Import the Start trait from the App\Traits\Action namespace.
 
 class Main
 {
