@@ -32,7 +32,12 @@ class Message
     /**
      * @var array $params Array to store message parameters.
      */
-    private $params;
+    private $params; // Array to store message parameters.
+
+    /**
+     * @var bool $ended Flag to indicate if the message has been sent.
+     */
+    private $ended = false; // Flag to indicate if the message has been sent.
 
     /**
      * Send the message with the set parameters.
@@ -45,6 +50,26 @@ class Message
      */
     public function __destruct()
     {
-        $this->request("sendMessage", $this->params);
+        // Check if the message hasn't already been sent to avoid duplicate sending.
+        if (!$this->ended) {
+            // Send the message using the request method with the set parameters.
+            $this->request("sendMessage", $this->params);
+        }
+    }
+
+    /**
+     * Set the end flag and send the message.
+     *
+     * This method sets the end flag to true, indicating that the message has been sent,
+     * and then sends the message using the request method with the set parameters.
+     *
+     * @return mixed The result of sending the message.
+     */
+    private function setEnd()
+    {
+        // Set the end flag to true.
+        $this->ended = true;
+        // Send the message using the request method with the set parameters.
+        return $this->request("sendMessage", $this->params);
     }
 }
