@@ -34,6 +34,15 @@ require_once 'vendor/autoload.php';
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
+// Display errors if the application is in development mode.
+if (env("APP_ENV") === "development") {
+    // Set PHP to display errors.
+    ini_set("display_errors", "on");
+
+    // Report all errors.
+    error_reporting(E_ALL);
+}
+
 /*
 |--------------------------------------------------------------------------
 | Defining API URL
@@ -43,7 +52,7 @@ $dotenv->load();
 | from the environment variables.
 |
 */
-define('API_URL', 'https://api.telegram.org/bot' . getenv('TOKEN') . '/');
+define('API_URL', 'https://api.telegram.org/bot' . env('TOKEN') . '/');
 
 /*
 |--------------------------------------------------------------------------
