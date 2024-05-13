@@ -171,4 +171,52 @@ trait Setters
         $this->params['message_ids'] = $message_ids;
         return $this;
     }
+
+    /**
+     * Set a caption for the message.
+     *
+     * @param string $caption The caption for the message.
+     * @return Message Returns the current instance with the caption set.
+     */
+    private function setCaption($caption)
+    {
+        $this->params['caption'] = $caption;
+        return $this;
+    }
+
+    /**
+     * Set entities for the caption.
+     *
+     * @param array $caption_entities An array of entities for the caption.
+     * @return Message Returns the current instance with the caption entities set.
+     */
+    private function setCaptionEntities($caption_entities)
+    {
+        $this->params['caption_entities'] = $caption_entities;
+        return $this;
+    }
+
+    /**
+     * Set a photo for the message.
+     *
+     * @param string $photo The photo for the message.
+     * @return Message Returns the current instance with the photo set.
+     */
+    private function setPhoto($photo)
+    {
+        $this->params['photo'] = $photo;
+        return $this;
+    }
+
+    /**
+     * Set whether the message has a spoiler.
+     *
+     * @param bool $has_spoiler A boolean value indicating whether the message has a spoiler.
+     * @return Message Returns the current instance with the spoiler flag set.
+     */
+    private function setHasSpoiler($has_spoiler)
+    {
+        $this->params['has_spoiler'] = $has_spoiler;
+        return $this;
+    }
 }
