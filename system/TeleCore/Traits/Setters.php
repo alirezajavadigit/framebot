@@ -216,23 +216,167 @@ trait Setters
      * Set a photo for the message.
      *
      * @param string $photo The photo for the message.
-     * @return this Returns the current instance with the photo set.
+     * @return $this Returns the current instance with the photo set.
      */
     private function setPhoto($photo)
     {
-        $this->params['photo'] = $photo;
-        return $this;
+        $this->params['photo'] = $photo; // Set the photo parameter.
+        return $this; // Return the current instance.
     }
 
     /**
      * Set whether the message has a spoiler.
      *
      * @param bool $has_spoiler A boolean value indicating whether the message has a spoiler.
-     * @return this Returns the current instance with the spoiler flag set.
+     * @return $this Returns the current instance with the spoiler flag set.
      */
     private function setHasSpoiler($has_spoiler)
     {
-        $this->params['has_spoiler'] = $has_spoiler;
-        return $this;
+        $this->params['has_spoiler'] = $has_spoiler; // Set the has_spoiler parameter.
+        return $this; // Return the current instance.
+    }
+
+    /**
+     * Set the audio for the message.
+     *
+     * @param mixed $audio The audio for the message.
+     * @return $this Returns the current instance with the audio set.
+     */
+    private function setAudio($audio)
+    {
+        $this->params['audio'] = $audio; // Set the audio parameter.
+        return $this; // Return the current instance.
+    }
+
+    /**
+     * Set the duration of the audio.
+     *
+     * @param int $duration The duration of the audio.
+     * @return $this Returns the current instance with the duration set.
+     */
+    private function setDuration($duration)
+    {
+        $this->params['duration'] = $duration; // Set the duration parameter.
+        return $this; // Return the current instance.
+    }
+
+    /**
+     * Set the performer of the audio.
+     *
+     * @param string $performer The performer of the audio.
+     * @return $this Returns the current instance with the performer set.
+     */
+    private function setPerformer($performer)
+    {
+        $this->params['performer'] = $performer; // Set the performer parameter.
+        return $this; // Return the current instance.
+    }
+
+    /**
+     * Set the title of the audio.
+     *
+     * @param string $title The title of the audio.
+     * @return $this Returns the current instance with the title set.
+     */
+    private function setTitle($title)
+    {
+        $this->params['title'] = $title; // Set the title parameter.
+        return $this; // Return the current instance.
+    }
+
+    /**
+     * Set the thumbnail for the message.
+     *
+     * @param string $thumbnail The thumbnail for the message.
+     * @return $this Returns the current instance with the thumbnail set.
+     */
+    private function setThumbnail($thumbnail)
+    {
+        $this->params['thumbnail'] = $thumbnail; // Set the thumbnail parameter.
+        return $this; // Return the current instance.
+    }
+
+    /**
+     * Set the document for the message.
+     *
+     * @param mixed $document The document for the message.
+     * @return $this Returns the current instance with the document set.
+     */
+    private function setDocument($document)
+    {
+        $this->params['document'] = $document; // Set the document parameter.
+        return $this; // Return the current instance.
+    }
+
+    /**
+     * Set whether to disable content type detection.
+     *
+     * @param bool $disable_content_type_detection A boolean value indicating whether to disable content type detection.
+     * @return $this Returns the current instance with the flag set.
+     */
+    private function setDisableContentTypeDetection($disable_content_type_detection)
+    {
+        $this->params['disable_content_type_detection'] = $disable_content_type_detection; // Set the disable_content_type_detection parameter.
+        return $this; // Return the current instance.
+    }
+
+    /**
+     * Set the video for the message.
+     *
+     * @param mixed $video The video for the message.
+     * @return $this Returns the current instance with the video set.
+     */
+    private function setVideo($video)
+    {
+        $this->params['video'] = $video; // Set the video parameter.
+        return $this; // Return the current instance.
+    }
+
+    /**
+     * Set the width of the message.
+     *
+     * @param int $width The width of the message.
+     * @return $this Returns the current instance with the width set.
+     */
+    private function setWidth($width)
+    {
+        $this->params['width'] = $width; // Set the width parameter.
+        return $this; // Return the current instance.
+    }
+
+    /**
+     * Set the height of the message.
+     *
+     * @param int $height The height of the message.
+     * @return $this Returns the current instance with the height set.
+     */
+    private function setHeight($height)
+    {
+        $this->params['height'] = $height; // Set the height parameter.
+        return $this; // Return the current instance.
+    }
+
+    /**
+     * Set whether the message supports streaming.
+     *
+     * @param bool $supports_streaming A boolean value indicating whether the message supports streaming.
+     * @return $this Returns the current instance with the flag set.
+     */
+    private function setSupportsStreaming($supports_streaming)
+    {
+        $this->params['supports_streaming'] = $supports_streaming; // Set the supports_streaming parameter.
+        return $this; // Return the current instance.
+    }
+
+    /**
+     * Set the animation for the message.
+     *
+     * @param mixed $animation The animation for the message.
+     * @return $this Returns the current instance with the animation set.
+     */
+    private function setAnimation($animation)
+    {
+        $this->params['animation'] = $animation; // Set the animation parameter.
+        return $this; // Return the current instance.
     }
 }
