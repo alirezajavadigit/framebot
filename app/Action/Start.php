@@ -31,7 +31,8 @@ trait Start
      */
     protected function start()
     {
-        // Send a message to the user containing a welcome greeting.
-        Message::chatId($this->chatID)->text("hi thank you for using my framework renew All");
+        if ($this->text == "/start") {
+            Message::chatId($this->chatID)->text("hi thank you for using my framework renew All");
+        }
     }
 }
