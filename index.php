@@ -2,14 +2,14 @@
 
 /*
 |--------------------------------------------------------------------------
-| Including Main Class
+| Including Kernel Class
 |--------------------------------------------------------------------------
 |
-| Import the Main class from the App namespace to use it in this script.
+| Import the Kernel class from the App namespace to use it in this script.
 |
 */
 
-use App\Main;
+use App\Kernel;
 
 /*
 |--------------------------------------------------------------------------
@@ -66,10 +66,10 @@ $content = file_get_contents("php://input");
 
 /*
 |--------------------------------------------------------------------------
-| Instantiating Main Class
+| Instantiating Kernel Class
 |--------------------------------------------------------------------------
 |
-| Instantiate the Main class, passing in the raw input data.
+| Instantiate the Kernel class, passing in the raw input data.
 |
 */
-$Main = new Main($content);
+$Kernel = new Kernel($content);
