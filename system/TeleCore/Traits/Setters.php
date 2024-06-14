@@ -379,4 +379,46 @@ trait Setters
         $this->params['animation'] = $animation; // Set the animation parameter.
         return $this; // Return the current instance.
     }
+
+    /**
+     * Set the voice for the message.
+     *
+     * @param mixed $voice The voice to set.
+     * @return $this Returns the current instance with the voice set.
+     */
+    private function setVoice($voice)
+    {
+        // Set the voice parameter.
+        $this->params['voice'] = $voice;
+        // Return the current instance.
+        return $this;
+    }
+
+    /**
+     * Set the message effect ID for the message.
+     *
+     * @param mixed $message_effect_id The message effect ID to set.
+     * @return $this Returns the current instance with the message effect ID set.
+     */
+    private function setMessageEffectId($message_effect_id)
+    {
+        // Set the message effect ID parameter.
+        $this->params['message_effect_id'] = $message_effect_id;
+        // Return the current instance.
+        return $this;
+    }
+
+    /**
+     * Set the length for the message.
+     *
+     * @param mixed $length The length to set.
+     * @return $this Returns the current instance with the length set.
+     */
+    private function setLength($length)
+    {
+        // Set the length parameter.
+        $this->params['length'] = $length;
+        // Return the current instance.
+        return $this;
+    }
 }
