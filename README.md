@@ -2,6 +2,8 @@
 
 FrameBot is a fast and secure framework that offers an ORM similar to Eloquent, making it incredibly user-friendly and powerful for developers looking to handle database operations efficiently. Designed with OOP principles in mind, FrameBot provides a robust foundation for building scalable applications.
 
+## Framebot Tutorial Watch this video 
+<kbd>[![Framebot Tutorial](https://i.pcmag.com/imagery/articles/02stCRlZlZJudzKvwJ29HQO-1..v1569484288.jpg)](https://www.youtube.com/watch?v=sEf4MRW0YiE)</kbd>
 ## Features
 
 - **ORM Similar to Eloquent**: Allows easy and efficient interaction with databases using an object-relational mapping system.
