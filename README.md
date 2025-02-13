@@ -1,26 +1,92 @@
 # FrameBot
 
-FrameBot is a fast and secure framework that offers an ORM similar to Eloquent, making it incredibly user-friendly and powerful for developers looking to handle database operations efficiently. Designed with OOP principles in mind, FrameBot provides a robust foundation for building scalable applications.
+[![Version](https://img.shields.io/badge/version-2.13.0-blue.svg)](https://github.com/alirezajavadigit/framebot)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub Stars](https://img.shields.io/github/stars/alirezajavadigit/framebot.svg?style=social)](https://github.com/alirezajavadigit/framebot/stargazers)
 
-## Framebot Tutorial Watch this video 
-<kbd>[![Framebot Tutorial](https://i.pcmag.com/imagery/articles/02stCRlZlZJudzKvwJ29HQO-1..v1569484288.jpg)](https://www.youtube.com/watch?v=sEf4MRW0YiE)</kbd>
-## Features
+A Modern PHP Framework for Telegram Bot Development & Database Management
 
-- **ORM Similar to Eloquent**: Allows easy and efficient interaction with databases using an object-relational mapping system.
-- **Environment Configuration**: Utilizes .env files for environment-specific settings, making it secure and versatile for different deployment scenarios.
-- **Object-Oriented Programming (OOP)**: Built with OOP principles to ensure clean, modular, and reusable code.
-- **Ease of Use**: Designed to be straightforward and intuitive, allowing developers to get projects up and running quickly.
-- **Fast and Secure**: Optimized for performance without compromising security, providing a reliable foundation for your applications.
-- **Open to All**: This is a personal project created by Alireza Javadi, and everyone is free to use it.
+> **Fast** · **Secure** · **Eloquent-style ORM** · **Telegram API First**
 
-## Contributing
+## 📺 Getting Started Video
+[![FrameBot Tutorial](https://i.pcmag.com/imagery/articles/02stCRlZlZJudzKvwJ29HQO-1..v1569484288.jpg)](https://www.youtube.com/watch?v=sEf4MRW0YiE "Watch FrameBot Tutorial")
 
-Contributions are warmly welcomed and greatly appreciated. There are no specific rules for contributing, but please ensure your changes are well-documented and tested:
+## ✨ Key Features
 
-## Installation
+### 🗄️ Database Superpowers
+- **Eloquent-style ORM** - Familiar Active Record implementation
+  ```php
+  $user = User::find(1)->update(['username' => 'framebot_user']);
+- **Migrations System** - Version-controlled database schema management
+- **Relationship Support** - HasMany, BelongsTo, Polymorphic relations
 
-To get started with FrameBot, you can clone the repository and set up the necessary environment:
+## 🤖 Telegram Integration
+- **Auto-Send Architecture** - RAII pattern for seamless API calls
+ ```php
+  Message::chatId($this->chatID)->text("welcome to my telegram bot");
+  // Automatically sends on destruct
+```
+### 25+ API Components - Pre-built classes for:
+  - 📍 Locations & Venues
+  - 🎲 Interactive Dice/Polls
+  - 💌 Media Groups & Paid Content
+  - 🎭 Message Reactions
+### 🛡️ Security First
+- Dotenv Implementation - Secure credential management
+- Auto-Sanitization - Built-in parameter validation
+- Request Throttling - Protection against API abuse
+### **Section 3: Quick Start**
 
+## 🚀 Quick Start
+
+### Requirements
+- PHP 8.0+
+- Composer
+- MySQL/PostgreSQL/SQLite
+
+### Installation
 ```bash
 git clone https://github.com/alirezajavadigit/framebot.git
 cd framebot
+composer install
+cp .env.example .env
+```
+### Configuration (.env)
+```ini 
+# Telegram Configuration
+TOKEN=your_bot_token_here
+APP_ENV=production
+
+# Database Settings
+DB_HOST=127.0.0.1
+DB_NAME=framebot
+DB_USERNAME=root
+DB_PASSWORD=
+```
+### **Section 5: Contributing & Community**
+## 🤝 Contributing
+
+We welcome contributions! Please follow these steps:
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit changes (`git commit -m 'Add some amazing feature'`)
+4. Push to branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+**Contribution Guidelines**:
+- Follow PSR-12 coding standards
+- Include PHPDoc comments
+- Add unit tests for new features
+- Update documentation accordingly
+
+## 🌍 Community
+
+- [GitHub Discussions](https://github.com/alirezajavadigit/framebot/discussions) - Q&A and general help
+- [Telegram Channel](https://t.me/framebot_community) - Announcements & updates & Q&A
+## 📜 License
+
+MIT License - See [LICENSE](LICENSE) for full text
+
+**Created with ❤️ by [Alireza Javadi](https://github.com/alirezajavadigit)**  
+**Part of the Open Source Telegram Bot Ecosystem** 🤖
