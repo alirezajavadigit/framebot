@@ -42,7 +42,7 @@ A Modern PHP Framework for Telegram Bot Development & Database Management
 ### Requirements
 - PHP 8.0+
 - Composer
-- MySQL/PostgreSQL/SQLite
+- MySQL
 
 ### Installation
 ```bash
