@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use FrameBot in your work, please cite this software."
+title: "FrameBot: PHP Telegram-Bot Framework"
+version: "v0.9.0"          # ← use the tag of your latest GitHub release
+doi: "10.5281/zenodo.XXXXXXX"  # ← Zenodo will give you this on first release
+date-released: 2025-05-10   # ← release date that matches your tag
+url: "https://github.com/alirezajavadigit/framebot"
+repository-code: "https://github.com/alirezajavadigit/framebot"
+license: "MIT"
+commit: "abcdef1"           # ← the git SHA that matches the release
+keywords:
+  - php
+  - telegram
+  - bot
+  - framework
+authors:
+  - family-names: Javadi
+    given-names: Ali Reza
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+    affiliation: "Tehran Institute of Technology"
+preferred-citation:
+  type: software
+  title: "FrameBot: PHP Telegram-Bot Framework"
+  version: "v0.9.0"
+  doi: "10.5281/zenodo.XXXXXXX"
+  url: "https://github.com/alirezajavadigit/framebot"
+  authors:
+    - family-names: Javadi
+      given-names: Ali Reza
