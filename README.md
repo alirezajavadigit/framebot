@@ -1,10 +1,11 @@
-# FrameBot
+# FrameBot – PHP Telegram Bot Framework
+
+**FrameBot is a lightweight PHP Telegram Bot framework that helps you build, test and deploy bots fast with Composer, PSR‑12 tooling and typed middleware.**
 
 [![Version](https://img.shields.io/badge/version-2.13.0-blue.svg)](https://github.com/alirezajavadigit/framebot)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub Stars](https://img.shields.io/github/stars/alirezajavadigit/framebot.svg?style=social)](https://github.com/alirezajavadigit/framebot/stargazers)
 
-A Modern PHP Framework for Telegram Bot Development & Database Management
 
 > **Fast** · **Secure** · **Eloquent-style ORM** · **Telegram API First**
 
